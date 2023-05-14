@@ -1,0 +1,66 @@
+<head>
+  <style>
+    .custom-card {
+      background-color: lightblue;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .custom-card-header {
+      font-weight: bold;
+      background-color: #fca311;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .custom-card-body {
+      padding: 10px;
+    }
+
+    .custom-card-subtitle {
+      color: #333333;
+    }
+
+    .custom-card-text {
+      color: #666666;
+    }
+
+    .custom-button {
+      background-color: #fca311;
+      color: #ffffff;
+      border-color: #fca311;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mb-5 p-5">
+    <% for( let project of projects ) { %>
+      <div class="custom-card mb-2 w-50 m-auto">
+        <div class="custom-card-header">
+          <strong> Name of the project: </strong>
+          <%= project.name %>
+        </div>
+        <div class="custom-card-body">
+          <h6 class="custom-card-subtitle mb-2 text-muted">
+            <strong> Author: </strong>
+            <%= project.author %>
+          </h6>
+          <p class="custom-card-text">
+            <strong> Description: </strong>
+            <%= project.description %>
+          </p>
+
+          <div class="m-auto text-end">
+            <a class="custom-button m-auto" href="/project/<%=project._id%>">Open project</a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+  </div>
+</body>
