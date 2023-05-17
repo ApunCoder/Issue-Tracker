@@ -34,7 +34,7 @@ Access the application at `http://localhost:8000` in your web browser.
 
 ```
 ### Folder Structure
-
+```
 Employee Review System
     |
     |               
@@ -68,4 +68,4 @@ Employee Review System
     |--> index.js
     |--> package-lock.json
     |-->  package.json
-
+```
