@@ -13,10 +13,9 @@ This is an issue tracker repository that helps you manage and track issues, bugs
 - Search and filter issues based on various criteria
 
 ## Installation
-
+```
 1. Clone the repository:
 
-```
 git clone https://github.com/apuncoder/issue-tracker.git
 
 2. Navigate to the project directory:
@@ -34,4 +33,39 @@ npm start
 Access the application at `http://localhost:3000` in your web browser.
 
 ```
+### Folder Structure
+
+Employee Review System
+    |
+    |               
+    |--->assets---->js|--->filterIssues.js
+    |                 |--->searchIssues.js
+    |
+    |--->config---->|--->mongoose.js              
+    |
+    |                
+    |--->controllers-->|-->home_controller.js
+    |                  |-->project_controller.js
+    |
+    |               |-->issue.js
+    |--->models---->|
+    |               |-->project.js
+    |
+    |--->routes---->|-->index.js
+    |               |-->project.js
+    |
+    |              |--->_header.ejs
+    |              |---> _footer.ejs
+    |              |---> _issue_form.ejs
+    |              |---> _issues.ejs
+    |--->views---->|--->_project_form.ejs
+    |              |--->home.ejs
+    |              |--->layout.ejs
+    |              |--->project_page.ejs
+    |
+    |-->node_modules
+    |-->.gitignore
+    |--> index.js
+    |--> package-lock.json
+    |-->  package.json
 
