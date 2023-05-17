@@ -30,7 +30,7 @@ npm install
 
 npm start
 
-Access the application at `http://localhost:3000` in your web browser.
+Access the application at `http://localhost:8000` in your web browser.
 
 ```
 ### Folder Structure
@@ -54,8 +54,8 @@ Employee Review System
     |--->routes---->|-->index.js
     |               |-->project.js
     |
-    |              |--->_header.ejs
-    |              |---> _footer.ejs
+    |               |-->_header.js
+    |               |-->_footer.js
     |              |---> _issue_form.ejs
     |              |---> _issues.ejs
     |--->views---->|--->_project_form.ejs
